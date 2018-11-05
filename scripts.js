@@ -42,3 +42,28 @@ let person5 = {
 };
 
 person5.sayHello();//calls sayHello for person5 using `name`
+
+function Person(name, age, state) {
+    this.name = name;
+    this.age = age;
+    this.state = state;
+};
+
+sayHello = function(object) {
+    console.log(`Hey! My name is ${object.name} I am ${object.age} years old and I live in ${object.state}.`);
+}
+
+person1 = new Person('Noreen', 50, 'Arizona');
+sayHello(person1);
+
+person2 = new Person('Shannon', 30, 'Colorado');
+sayHello(person2);
+
+person3 = new Person('Steph', 27, 'Colorado');
+sayHello(person3);
+
+person4 = new Person('Tristan', 15, 'Colorado');
+sayHello(person4);
+
+person5 = new Person('Gavine', 18, 'California');
+sayHello(person5);
