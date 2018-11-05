@@ -76,7 +76,9 @@ class Family {
     }
 };
 
-sayHello => console.log(`Hey! My name is ${Family.name} I am ${Family.age} years old and I live in ${Family.city}.`)
+sayHello = function(Family) {
+    console.log(`Hey! My name is ${Family.name} I am ${Family.age} years old and I live in ${Family.city}.`);
+}
 
 person1 = new Family('Noreen', 'Chandler', 50);
 sayHello(person1);
