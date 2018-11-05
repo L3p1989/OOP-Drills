@@ -56,7 +56,7 @@ sayHello = function(object) {
 person1 = new Person('Noreen', 50, 'Arizona');
 sayHello(person1);
 
-person2 = new Person('Shannon', 30, 'Colorado');
+person2 = new Person('Shannon', 33, 'Colorado');
 sayHello(person2);
 
 person3 = new Person('Steph', 27, 'Colorado');
@@ -66,4 +66,29 @@ person4 = new Person('Tristan', 15, 'Colorado');
 sayHello(person4);
 
 person5 = new Person('Gavine', 18, 'California');
+sayHello(person5);
+
+class Family {
+    constructor(name, city, age) {
+        this.name = name;
+        this.city = city;
+        this.age = age;
+    }
+};
+
+sayHello => console.log(`Hey! My name is ${Family.name} I am ${Family.age} years old and I live in ${Family.city}.`)
+
+person1 = new Family('Noreen', 'Chandler', 50);
+sayHello(person1);
+
+person2 = new Family('Shannon', 'Denver', 33);
+sayHello(person2);
+
+person3 = new Family('Steph', 'Denver', 27);
+sayHello(person3)
+
+person4 = new Family('Tristan', 'Colorado Springs', 15);
+sayHello(person4);
+
+person5 = new Family('Gavine', 'Los Angeles', 18);
 sayHello(person5);
