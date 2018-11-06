@@ -98,23 +98,21 @@ class Vehicle {
     constructor(manufacturer, wheels) {
         this.manufacturer = manufacturer;
         this.wheels = wheels;
-    }
+    };
     aboutVehicle() {
             console.log(`This is a vehicle, made by ${this.manufacturer}, that has ${this.wheels} wheels.`)
     };
 };
-
-let truckBed = false;
 
 class Truck extends Vehicle {
     constructor(manufacturer, wheels, doors, hasBed) {
         super(manufacturer, wheels);
         this.doors = doors;
         Boolean = hasBed;
-    }
+    };
     aboutVehicle() {
         console.log(`This is a truck, made by ${this.manufacturer}, that has ${this.wheels} wheels, ${this.doors} doors, and a truck bed.`)
-    }
+    };
 };
 
 class Sedan extends Vehicle {
@@ -123,8 +121,19 @@ class Sedan extends Vehicle {
         this.doors = doors
         this.size = size === 'small' || 'medium';
         this.mpg = mpg;
-    }
+    };
     aboutVehicle() {
-        console.log(`this is a sedan, made by ${this.manufacturer}, that has ${this.wheels} wheels, ${this.doors} doors, is a ${this.size} class, and gets ${this.mpg} miles per gallon`);
-    }
+        console.log(`This is a sedan, made by ${this.manufacturer}, that has ${this.wheels} wheels, ${this.doors} doors, is a ${this.size} class, and gets ${this.mpg} miles per gallon`);
+    };
+};
+
+class Motorcycle extends Vehicle {
+    constructor(manufacturer, wheels, doors, handleBars) {
+        super(manufacturer, wheels);
+        this.doors = doors === 0;
+        Boolean = handleBars;
+    };
+    aboutVehicle() {
+        console.log(`This is a motorcycle, made by ${this.manufacturer}, that has ${this.wheels} wheels. Motorcycles don't have doors, but have handle bars instead of a steering wheel`);
+    };
 };
