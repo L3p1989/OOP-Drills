@@ -117,5 +117,14 @@ class Truck extends Vehicle {
     }
 };
 
-let colorado = new Truck('Chevy', 4, 4, true);
-colorado.aboutVehicle();
+class Sedan extends Vehicle {
+    constructor(manufacturer, wheels, doors, size, mpg) {
+        super(manufacturer, wheels);
+        this.doors = doors
+        this.size = size === 'small' || 'medium';
+        this.mpg = mpg;
+    }
+    aboutVehicle() {
+        console.log(`this is a sedan, made by ${this.manufacturer}, that has ${this.wheels} wheels, ${this.doors} doors, is a ${this.size} class, and gets ${this.mpg} miles per gallon`);
+    }
+};
