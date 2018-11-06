@@ -108,7 +108,7 @@ class Truck extends Vehicle {
     constructor(manufacturer, wheels, doors, hasBed) {
         super(manufacturer, wheels);
         this.doors = doors;
-        Boolean = hasBed;
+        Boolean = hasBed === true;
     };
     aboutVehicle() {
         console.log(`This is a truck, made by ${this.manufacturer}, that has ${this.wheels} wheels, ${this.doors} doors, and a truck bed.`)
@@ -131,7 +131,7 @@ class Motorcycle extends Vehicle {
     constructor(manufacturer, wheels, doors, handleBars) {
         super(manufacturer, wheels);
         this.doors = doors === 0;
-        Boolean = handleBars;
+        Boolean = handleBars === true;
     };
     aboutVehicle() {
         console.log(`This is a motorcycle, made by ${this.manufacturer}, that has ${this.wheels} wheels. Motorcycles don't have doors, but have handle bars instead of a steering wheel`);
